@@ -1,50 +1,70 @@
-# Welcome to your Expo app 👋
+# Blockhouse Trial Task
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## About the Project
 
-## Get started
+This project is a mobile application built using **Expo**, **React Native**, and **TypeScript**. It incorporates modern development practices and provides essential mobile app functionality.
 
-1. Install dependencies
+## Project Setup
 
+To set up the project locally, follow these steps:
+
+1. **Ensure you have Node.js and npm (or yarn) installed on your system**
+2. **Clone the Repository:**
+   - Clone this repository locally:
+     ```bash
+     git clone https://github.com/your-username/blockhouse-trial-task.git
+     ```
+3. **Navigate to Project Folder:**
+   - Open a terminal and navigate to the project directory:
+     ```bash
+     cd blockhouse-trial-task
+     ```
+4. **Install Dependencies:**
+   - Install all project dependencies:
+     ```bash
+     npm install
+     ```
+   - Or using yarn
+     ```bash
+     yarn install
+     ```
+
+### Dependencies
+
+This project relies on the following packages:
+
+- @hookform/resolver
+- @react-navigation
+- expo
+- react, react-dom, react-native
+- react-hook-form
+- react-native-safe-area-context
+- react-native-svg
+- styled-components.
+- zod
+
+### Available Scripts
+
+- **start**: Starts the app in an emulator or connected device.
+- **android**, **ios**, **web**: Starts the app for the specific platform (Android, iOS, or Web).
+- **test**: Runs tests using Jest.
+- **lint**: Runs lint checks on the code.
+
+### Running the App Locally
+
+1. **Make sure you have an emulator set up or a physical device connected.**
+2. **Start the app using the command:**
    ```bash
-   npm install
+   npm start
    ```
 
-2. Start the app
+- Or using yarn:
+  ```bash
+  yarn start
+  ```
 
-   ```bash
-    npx expo start
-   ```
+3. **Follow the instructions in the terminal to open the app on the emulator or device.**
 
-In the output, you'll find options to open the app in a
+## License
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project is licensed under the MIT License
