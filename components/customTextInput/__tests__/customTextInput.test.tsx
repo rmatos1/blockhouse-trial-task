@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text } from 'react-native';
 import { render, fireEvent } from '@testing-library/react-native';
-import { CustomTextInput, CustomTextInputProps } from '../CustomTextInput';
+import { CustomTextInput, CustomTextInputProps } from '../customTextInput';
 
 const ERROR_MESSAGE = 'This field is required';
 

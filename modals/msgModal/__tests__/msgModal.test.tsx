@@ -1,5 +1,5 @@
 import { render, fireEvent } from '@testing-library/react-native';
-import { MsgModal } from '../MsgModal';
+import { MsgModal } from '../msgModal';
 
 describe('MsgModal', () => {
   it('should render the modal with title and description', () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react-native';
-import { ActionButton } from '../ActionButton';
+import { ActionButton } from '../actionButton';
 
 describe('ActionButton', () => {
   it('renders button with the correct text', () => {
