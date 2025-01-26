@@ -39,7 +39,7 @@ jobs:
       - run: npm install
       - run: |
           echo "EXPO_TOKEN=${{ secrets.EXPO_TOKEN }}" >> $GITHUB_ENV
-      - run: npx eas build --platform android --non-interactive
+      - run: npx eas build --platform android --non-interactive --profile development
 
   build-ios:
     runs-on: macos-latest
@@ -58,4 +58,4 @@ jobs:
       - run: npm install
       - run: |
           echo "EXPO_TOKEN=${{ secrets.EXPO_TOKEN }}" >> $GITHUB_ENV
-      - run: npx eas build --platform ios --non-interactive
+      - run: npx eas build --platform ios --non-interactive --profile development

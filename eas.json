@@ -2,20 +2,18 @@
   "build": {
     "development": {
       "android": {
-        "workflow": "managed",
         "buildType": "apk"
       },
       "ios": {
-        "workflow": "managed"
+        "simulator": true
       }
     },
     "production": {
       "android": {
-        "workflow": "managed",
         "buildType": "app-bundle"
       },
       "ios": {
-        "workflow": "managed"
+        "simulator": false
       }
     }
   },
