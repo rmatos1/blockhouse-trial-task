@@ -14,9 +14,11 @@
     },
     "ios": {
       "supportsTablet": true,
-      "buildNumber": "1.0.0"
+      "buildNumber": "1.0.0",
+      "bundleIdentifier": "com.blockhouse-trial-task.app"
     },
     "android": {
+      "package": "com.blockhouse-trial-task.app",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/logo.png",
         "backgroundColor": "#fff"
@@ -30,9 +32,7 @@
     "experiments": {
       "typedRoutes": true
     },
-    "plugins": [
-      "expo-router"
-    ],
+    "plugins": ["expo-router"],
     "extra": {
       "router": {
         "origin": false
