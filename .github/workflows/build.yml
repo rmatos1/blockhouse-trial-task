@@ -40,10 +40,6 @@ jobs:
       - run: |
           echo "EXPO_ACCESS_TOKEN=${{ secrets.EXPO_ACCESS_TOKEN }}" >> $GITHUB_ENV
       - run: npx eas build --platform android --non-interactive --output-dir ./android-build
-      - uses: actions/upload-artifact@v3
-        with:
-          name: Android Build
-          path: ./android-build
 
   build-ios:
     runs-on: macos-latest
@@ -63,7 +59,3 @@ jobs:
       - run: |
           echo "EXPO_ACCESS_TOKEN=${{ secrets.EXPO_ACCESS_TOKEN }}" >> $GITHUB_ENV
       - run: npx eas build --platform ios --non-interactive --output-dir ./ios-build
-      - uses: actions/upload-artifact@v3
-        with:
-          name: iOS Build
-          path: ./ios-build

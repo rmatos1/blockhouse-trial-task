@@ -1,10 +1,25 @@
 {
   "build": {
-    "android": {
-      "workflow": "managed"
+    "development": {
+      "android": {
+        "workflow": "managed",
+        "buildType": "apk"
+      },
+      "ios": {
+        "workflow": "managed"
+      }
     },
-    "ios": {
-      "workflow": "managed"
+    "production": {
+      "android": {
+        "workflow": "managed",
+        "buildType": "app-bundle"
+      },
+      "ios": {
+        "workflow": "managed"
+      }
     }
+  },
+  "cli": {
+    "version": ">= 3.0.0"
   }
 }
