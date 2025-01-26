@@ -39,7 +39,7 @@ jobs:
       - run: npm install
       - run: |
           echo "EXPO_ACCESS_TOKEN=${{ secrets.EXPO_ACCESS_TOKEN }}" >> $GITHUB_ENV
-      - run: npx eas build --platform android --non-interactive --output-dir ./android-build
+      - run: npx eas build --platform android --non-interactive
 
   build-ios:
     runs-on: macos-latest
@@ -58,4 +58,4 @@ jobs:
       - run: npm install
       - run: |
           echo "EXPO_ACCESS_TOKEN=${{ secrets.EXPO_ACCESS_TOKEN }}" >> $GITHUB_ENV
-      - run: npx eas build --platform ios --non-interactive --output-dir ./ios-build
+      - run: npx eas build --platform ios --non-interactive
