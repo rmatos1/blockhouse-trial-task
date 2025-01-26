@@ -15,10 +15,10 @@
     "ios": {
       "supportsTablet": true,
       "buildNumber": "1.0.0",
-      "bundleIdentifier": "com.blockhouse-trial-task.app"
+      "bundleIdentifier": "com.blockhouse_trial_task.app"
     },
     "android": {
-      "package": "com.blockhouse-trial-task.app",
+      "package": "com.blockhouse_trial_task.app",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/logo.png",
         "backgroundColor": "#fff"
