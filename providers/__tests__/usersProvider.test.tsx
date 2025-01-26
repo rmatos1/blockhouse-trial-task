@@ -16,22 +16,27 @@ describe('UsersProvider', () => {
 });
 
 describe('UsersContext', () => {
-  test('addUser and authUser should work correctly', async () => {
+  test('authUser finds and returns user', async () => {
+    let contextValue;
+
     render(
       <UsersProvider>
         <UsersContext.Consumer>
           {(context) => {
-            act(() => {
-              context.addUser(mockUser);
-            });
-
-            waitFor(() => {
-              const user = context.authUser(mockUser);
-              expect(user).toEqual(mockUser);
-            });
+            contextValue = context;
+            return null;
           }}
         </UsersContext.Consumer>
       </UsersProvider>
     );
+
+    act(() => {
+      contextValue.addUser(mockUser);
+    });
+
+    await waitFor(() => {
+      const user = contextValue.authUser(mockUser);
+      expect(user).toEqual(mockUser);
+    });
   });
 });
