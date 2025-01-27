@@ -15,7 +15,7 @@
     "ios": {
       "supportsTablet": true,
       "buildNumber": "1.0.0",
-      "bundleIdentifier": "com.blockhouse_trial_task.app"
+      "bundleIdentifier": "com.blockhouse-trial-task.app"
     },
     "android": {
       "package": "com.blockhouse_trial_task.app",
