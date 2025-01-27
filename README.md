@@ -80,14 +80,16 @@ This project relies on the following packages:
 
 1. **Make sure you have an emulator set up or a physical device connected.**
 2. **Start the app using the command:**
+
    ```bash
    npm start
    ```
 
-- Or using yarn:
-  ```bash
-  yarn start
-  ```
+   - Or using yarn:
+
+   ```bash
+   yarn start
+   ```
 
 3. **Follow the instructions in the terminal to open the app on the emulator or device.**
 
@@ -121,11 +123,11 @@ The pipeline consists of the following jobs:
 
 2. **Build Android**:
 
-- Builds the Android app using Expo EAS Build.
+   - Builds the Android app using Expo EAS Build.
 
 3. **Build iOS**:
 
-- Builds the iOS app using Expo EAS Build.
+   - Builds the iOS app using Expo EAS Build.
 
 ---
 
@@ -159,19 +161,19 @@ The following environment variables are required for the pipeline to work:
 
 1. **Generate an Expo Access Token**:
 
-- Log in to your Expo account and generate a token from the [Expo dashboard](https://expo.dev/settings/access-tokens).
+   - Log in to your Expo account and generate a token from the [Expo dashboard](https://expo.dev/settings/access-tokens).
 
 2. **Add the Token to GitHub Secrets**:
 
-- Go to your GitHub repository settings.
+   - Go to your GitHub repository settings.
 
-- Navigate to Secrets and variables > Actions.
+   - Navigate to Secrets and variables > Actions.
 
-- Add a new secret named EXPO_TOKEN with the value of your Expo access token.
+   - Add a new secret named EXPO_TOKEN with the value of your Expo access token.
 
 3. **Push Changes to Trigger the Pipeline**:
 
-- Push changes to the master branch to trigger the CI/CD pipeline.
+   - Push changes to the master branch to trigger the CI/CD pipeline.
 
 ---
 
